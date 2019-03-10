@@ -15,9 +15,15 @@ async def on_message(message):
     if message.author == client.user:
         return
 
+    msg="""
+        Valid commands: !hello
+        Sorry, that's all I do right now!
+    """
+
     if message.content.startswith('!hello'):
         msg = 'Hello {0.author.mention}'.format(message)
-        await client.send_message(message.channel, msg)
+
+    await client.send_message(message.channel, msg)
 
 @client.event
 async def on_ready():
