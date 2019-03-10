@@ -1,7 +1,7 @@
-# Work with Python 3.6
+import os
 import discord
 
-TOKEN = 'XXXXXXXXXX'
+TOKEN = os.environ['TOM-BOT-TOKEN']
 
 client = discord.Client()
 
