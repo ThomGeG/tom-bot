@@ -12,11 +12,12 @@ client = Bot(command_prefix="!")
 
 @client.command(
     name='hello',
-    description='Greets you.',
+    breif='A friendly greeting',
+    description='A small friendly greeting you\'d expect from any aspiring bot such as myself.',
     pass_context=True
 )
 async def hello(context):
-    await client.say("Hello, " + context.message.author.mention)
+    await client.say("Hello " + context.message.author.mention + ", I'm Tom-Bot!")
 
 @client.event
 async def on_ready():
