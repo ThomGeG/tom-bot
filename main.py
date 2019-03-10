@@ -1,7 +1,11 @@
-import os
+import os, sys
 import discord
 
-TOKEN = os.environ['TOM_BOT_TOKEN']
+try:
+    TOKEN = os.environ['TOM_BOT_TOKEN']
+except KeyError:
+    print("ERROR: Please add an OAuth2 token to an environment variable 'TOM_BOT_TOKEN'.")
+    sys.exit(1)
 
 client = discord.Client()
 
