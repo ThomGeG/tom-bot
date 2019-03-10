@@ -12,7 +12,8 @@ client = Bot(command_prefix="!")
 
 @client.command(
     name='hello',
-    description='Greets you.'
+    description='Greets you.',
+    pass_context=True
 )
 async def hello(context):
     await client.say("Hello, " + context.message.author.mention)
