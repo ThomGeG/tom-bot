@@ -1,7 +1,7 @@
 import os
 import discord
 
-TOKEN = os.environ['TOM-BOT-TOKEN']
+TOKEN = os.environ['TOM_BOT_TOKEN']
 
 client = discord.Client()
 
