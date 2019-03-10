@@ -17,9 +17,6 @@ async def on_message(message):
 
 @client.event
 async def on_ready():
-    print('Logged in as')
-    print(client.user.name)
-    print(client.user.id)
-    print('------')
+    print('Logged in as: ' + client.user.name + "(" + client.user.id + ")")
 
 client.run(TOKEN)
