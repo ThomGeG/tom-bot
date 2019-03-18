@@ -1,1 +1,1 @@
-CREATE DATABASE bot_brain;
+CREATE DATABASE IF NOT EXISTS bot_brain;
