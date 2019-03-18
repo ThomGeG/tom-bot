@@ -1,8 +1,6 @@
 import os
 import mysql.connector
 
-CHANGELOG_DIR = "database_scripts"
-
 mydb = mysql.connector.connect(
   host="localhost",
   user="root",
@@ -10,6 +8,7 @@ mydb = mysql.connector.connect(
 )
 
 db_cursor = mydb.cursor()
+CHANGELOG_DIR = "database_scripts"
 changelogs = [os.path.join(CHANGELOG_DIR, fname) for fname in os.listdir(CHANGELOG_DIR)]
 
 for changelog in changelogs:
