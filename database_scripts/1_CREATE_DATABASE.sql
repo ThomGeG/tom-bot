@@ -1,1 +1,1 @@
-CREATE DATABASE bot-brain;
+CREATE DATABASE bot_brain;
